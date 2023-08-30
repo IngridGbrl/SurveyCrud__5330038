@@ -7,7 +7,7 @@ public partial class AppShell : Shell
 	public AppShell()
 	{
 		InitializeComponent();
-        //se registra la ruta para navegar a la página TodoItemPage,
+        //se registra la ruta para navegar a la página SurveyDetailsView,
 		//la cual se crearán o editará un elemento de la lista de tareas
         Routing.RegisterRoute(nameof(SurveyDetailsView), typeof(SurveyDetailsView));
 	}

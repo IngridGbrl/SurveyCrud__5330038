@@ -25,16 +25,12 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 		builder.Services.AddSingleton<SurveysView>();
-        //indica que se registra un servicio de tipo TodoListPage, que define una clase la cual muestra los elementos de
-		//una lista de tareas.
+
 
         builder.Services.AddTransient<SurveyDetailsView>();
-        //registra un servicio de tipo TodoItemPage, que es una clase que define una pagina para crear o editar un elemento
-		//de la lista de tareas,
-		//el metodo indica que se creara una nnueva instancia del servicio cada vez que se solicite.
+
         builder.Services.AddSingleton<SurveyDatabase>();
-        //registra un servicio de tipo TodoItemDatabase, que es una clase que se encarga de las operaciones con la base de datos local
-		//el metodo indica que se usara el mismo tipo de objeto TodoItemDatabase para todas las solicitudes del servicio
+
         return builder.Build();
 	}
 }

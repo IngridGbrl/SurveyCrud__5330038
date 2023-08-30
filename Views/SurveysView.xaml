@@ -5,7 +5,7 @@
              x:Class="_5330038.Views.SurveysView"
              xmlns:ios ="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
              ios:Page.UseSafeArea="True"
-             Title="Todo">
+             Title="Survey">
     <Grid RowDefinitions="*,Auto">
         <CollectionView VerticalOptions="Fill" ItemsSource="{Binding Items}" 
                          SelectionMode="Single" SelectionChanged="CollectionView_SelectionChanged" >
@@ -18,10 +18,10 @@
                             <Label.FormattedText>
                                 <FormattedString>
                                     <Span Text="{Binding Name}"/>
-                                    <Span Text="||"/>
+                                    <Span Text="||" TextColor="Purple" FontAttributes="Bold"/>
                                     <Span Text="{Binding Birthdate}"/>
-                                    
-                                    <Span Text="||"/>
+
+                                    <Span Text="||" TextColor="Purple" FontAttributes="Bold"/>
                                     <Span Text="{Binding FavoriteTeam}"/>
                                 </FormattedString>
                             </Label.FormattedText>
